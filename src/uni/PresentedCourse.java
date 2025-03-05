@@ -7,14 +7,15 @@ public class PresentedCourse {
     public int courseID;
     public int professorID;
     public int capacity;
-    public ArrayList<Integer> studentIds;
+    public ArrayList<Integer> studentIds = new ArrayList<>();
 
     public PresentedCourse (int courseID, int professorID, int maxCapacity){
+        this.id = presentedCourseList.size() + 1;
         this.courseID = courseID;
         this.professorID = professorID;
         this.capacity = maxCapacity;
-        this.studentIds = new ArrayList<>(capacity);
-        this.id = presentedCourseList.size();
+        presentedCourseList.add(this);
+
     }
 
     public static PresentedCourse findById (int ID){
@@ -31,7 +32,7 @@ public class PresentedCourse {
             studentIds.add(studentID);
         }
         else {
-            System.out.println("error");
+            System.out.println("error! Zarfiat por shodeh");
         }
     }
 }

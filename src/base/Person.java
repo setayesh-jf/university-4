@@ -8,6 +8,7 @@ public class Person {
     public String nationalID;
 
     public Person(String name, String nationalID){
+        this.id = personList.size()+1;
         this.name = name;
         this.nationalID = nationalID;
         personList.add(this);
