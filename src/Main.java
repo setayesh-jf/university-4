@@ -17,9 +17,9 @@ public class Main {
         Person person4 = new Person("Ava Beighi", "0332256712");
         Person person5 = new Person("Saeid Rezaii", "0331426789");
 
-        Student student1 = new Student(person1.id, 1401, math.id);
-        Student student2 = new Student(person2.id, 1402, math.id);
-        Student student3 = new Student(person3.id, 1403, cs.id);
+        Student student1 = new Student(person1.id, 401, math.id);
+        Student student2 = new Student(person2.id, 402, math.id);
+        Student student3 = new Student(person3.id, 403, cs.id);
 
         for (Student student : Student.studentList){
             System.out.println("Name: " + Person.findByID(student.personID).name);
