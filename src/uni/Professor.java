@@ -7,7 +7,7 @@ public class Professor {
     public int majorID;
 
     public Professor (int personID, int majorID){
-        this.id = professorList.size() + 1;
+        this.id = professorList.size() + 4;
         this.personID = personID;
         this.majorID = majorID;
         professorList.add(this);
